@@ -46,14 +46,14 @@ Cron Job
 
 1. Run ```crontab -e```
 2. Add ```0 0 */2 * * /usr/bin/python3 /path/to/script.py```
-3. Replace /path/to/script.py with the actual path to your script
+3. Replace ```/path/to/script.py``` with the actual path to your script
 4. Adjust when and how often you would like the script to run (command in 2. runs every 2 days at mightnight(00:00))
 
 Note: check documentation for help on how to use cron jobs
 
 ---
 
-## Example Output
+## 📜 Example Output
 
 ✅ TLS cert expiry date > 30 days:
 
@@ -72,7 +72,7 @@ Certificate for example.com expires on 20/07/2025 14:40:00 (89 days left)
 ## 📌 How It Works
 
 1. Make connection to domain
-2. Get certificate
+2. Get TLS certificate
 3. Extract expiry date ("Not After" field)
 4. Compare expiry date to threshold days
     - if less than threshold days
@@ -82,13 +82,7 @@ Certificate for example.com expires on 20/07/2025 14:40:00 (89 days left)
 
 ---
 
-## To Do List
-
-N/A
-
----
-
-## License
+## 📝 License
 
 This project is licensed under the MIT License. Feel free to use, modify, and distribute it, but please provide attribution by keeping my name in the copyright notice.
 
@@ -96,6 +90,6 @@ If you improve the script or use it in a project, a shoutout or a mention would 
 
 ---
 
-## Notes
+## 📋 Notes
 
 You can change the date format if you wish.
