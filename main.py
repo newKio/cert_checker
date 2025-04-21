@@ -63,7 +63,7 @@ try:
 
     if days_left < threshold_days:
         # only send email if less than the threshold days left
-        send_email_proton(f"Certificate for {hostname} expires on {expiry.strftime('%d/%m/%Y %H:%M:%S')} ({days_left} days left)")
+        send_email_proton(f"Cert Checker - Certificate for {hostname} expires on {expiry.strftime('%d/%m/%Y %H:%M:%S')} ({days_left} days left)")
 
 except Exception as e:
     send_error_email(traceback.format_exc())
