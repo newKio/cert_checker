@@ -53,7 +53,7 @@ def get_cert_expiry(hostname, port):
             cert = ssock.getpeercert()
             expire_date_str = cert['notAfter']
             expire_date = datetime.strptime(expire_date_str, '%b %d %H:%M:%S %Y %Z')
-            return expire_date  # ← return the datetime object
+            return expire_date
 
 
 # main logic
