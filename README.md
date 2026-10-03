@@ -64,7 +64,7 @@ No email is sent to reduce clutter in inbox
 🚨 TLS cert expiry date < 30 days:
 
 ``` bash
-Certificate for example.com expires on 20/07/2025 14:40:00 (89 days left)
+Certificate for example.com expires on 20/07/2025 14:40:00 (29 days left)
 ```
 
 ---
